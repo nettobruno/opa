@@ -20,9 +20,9 @@
 /*Estilização da Imagem de fundo, título e botão no topo*/
 header#topo {
   background: linear-gradient(50deg, rgba(56, 70, 197, .7) 0%, rgba(255, 46, 66, .8) 100%), url("../img/otavio-fundo-preto.png");
-  /*255, 65, 105*/
   background-size: cover;
   min-height: 100vh;
+  min-width: 100vh;
   text-align: center;
 }
 
@@ -60,6 +60,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Logo da ETEC. Só é exibido após o scroll ser ativado */
 img#img-menu {
   width: 7%;
   margin-top: -50px;
@@ -67,6 +68,7 @@ img#img-menu {
   margin-right: 7%;
 }
 
+/* Esse menu fica escondido. Ele só é exibido quando o JS percebe que o scroll entrou em ação. Arquivo main.js na pasta js */
 nav.alterar-menu {
   background-color: white;
   box-shadow: 0px 1px 10px #808080;
@@ -501,6 +503,7 @@ section#segundo-conteudo p {
   padding: 10%;
 }
 
+/* Esse h6 é uma gambiarra feita por mim, porque não consegui centralizar o link, então coloquei ele dentro de um titulo e centralizei esse titulo */
 h6 {
   text-align: center;
   margin-top: -8%;
@@ -522,82 +525,5 @@ a#btn-jogar {
 a#btn-jogar:hover {
   background-color: #C42333;
   border-color: #C42333;
-}
-
-a#btn-jogar:hover {
   text-decoration: underline;
-}
-
-/*Seção com botão de link para os jogos*/
-section#jogos {
-  background: linear-gradient(50deg, rgba(56, 70, 197), rgb(255, 46, 66) 100%);
-  min-height: 100vh;
-  text-align: center;
-}
-
-section#jogos>div {
-  display: inline-block;
-  background-color: white;
-  color: #FF2E42;
-  border-radius: 10px;
-  width: 35%;
-  height: 700px;
-  font-family: 'Sacramento', cursive;
-  font-size: 3rem;
-  margin-top: 2%;
-}
-
-/*retângulo do jogo da forca*/
-div#forca {
-  margin-right: 20px;
-  background: url('../img/jogo-forca.png') no-repeat 50% 80px;
-  background-size: 500px;
-}
-
-/*retângulo do jogo da velha*/
-div#velha {
-  margin-left: 20px;
-  background: url('../img/jogo-velha.png') no-repeat 50% 80px;
-  background-size: 500px;
-}
-
-/*Botão dos jogos*/
-section#jogos a {
-  margin-top: 70%;
-}
-
-a#seta-final img {
-  position: absolute;
-  width: 4%;
-  margin-top: 45%;
-  margin-left: 5%;
-  float: right;
-  transition: .3s;
-}
-
-a#seta-final img:hover {
-  transform: scale(1.2);
-}
-
-@media(max-width: 1500px) {
-  section#jogos>div {
-    height: 500px;
-    margin-top: 80px;
-  }
-
-  section#jogos>div {
-    font-size: 2.5rem;
-  }
-
-  div#forca {
-    background-size: 300px;
-  }
-
-  div#velha {
-    background-size: 300px;
-  }
-
-  section#jogos a {
-    margin-top: 65%;
-  }
 }
