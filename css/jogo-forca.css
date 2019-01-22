@@ -11,6 +11,7 @@
 
 body {
 	font-family: 'Nunito Sans Light', sans-serif;
+	font-size: 1.50em;
 }
 
 li {
@@ -51,7 +52,7 @@ div {
 	border-radius: 5px;
 	background-color: #FF2E42;
 	color: white;
-	font-size: 25px;
+	font-size: 1.2em;
 }
 
 .botoes:hover {
@@ -77,6 +78,7 @@ section#tchutes>div {
 	height: 100%;
 }
 
+/*Botões links ao final da página*/
 a#jogos-btn {
 	display: inline-block;
 	margin-top: 1%;
@@ -86,11 +88,11 @@ a#jogos-btn {
 	border-radius: 5px;
 	background-color: #1ED107;
 	color: white;
-	font-size: 20px;
+	font-size: .8em;
 	font-family: 'Nunito Sans', sans-serif;
 }
 
-a#voltar-btn {
+a#principal-btn {
 	display: inline-block;
 	margin-top: 1%;
 	text-decoration: none;
@@ -99,24 +101,15 @@ a#voltar-btn {
 	border-radius: 5px;
 	background-color: #FF2E42;
 	color: white;
-	font-size: 20px;
+	font-size: .8em;
 	font-family: 'Nunito Sans', sans-serif;
 }
 
-a#voltar-btn:hover {
+a#principal-btn:hover {
 	background-color: #C42333;
 	border-color: #C42333;
 }
 
 a#jogos-btn:hover {
 	text-decoration: underline;
-}
-
-@media(max-width: 1500px) {
-
-	a#jogos-btn,
-	a#voltar-btn {
-		font-size: 15px;
-		padding: 15px 35px;
-	}
 }

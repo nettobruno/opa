@@ -79,28 +79,33 @@ section#jogos {
     /*Usando margim o menu também descia. Foi só mudar para padding que o espaçamento entre os blocos de jogos e menu funcionou*/
 }
 
-section#jogos>div {
+section#jogos div.bloco-jogo {
+    margin-top: 5%;
     display: inline-block;
     background-color: white;
     color: #FF2E42;
     border-radius: 10px;
     width: 35%;
-    height: 700px;
+    height: 550px;
     font-family: 'Sacramento', cursive;
+}
+
+div.bloco-jogo h2{
+    font-size: 4em;
 }
 
 /*retângulo do jogo da forca*/
 div#forca {
     margin-right: 20px;
     background: url('../img/jogo-forca.png') no-repeat 50% 80px;
-    background-size: 500px;
+    background-size: 75%;
 }
 
 /*retângulo do jogo da velha*/
 div#velha {
     margin-left: 20px;
     background: url('../img/jogo-velha.png') no-repeat 50% 80px;
-    background-size: 5 00px;
+    background-size: 75%;
 }
 
 div#digito {
@@ -114,46 +119,17 @@ div#digito {
     display: inline-block;
     text-decoration: none;
     border: 1px solid #FF2E42;
-    padding: 15px 30px;
+    padding: 20px 40px;
     border-radius: 5px;
     background-color: #FF2E42;
     color: white;
-    font-size: 1em;
+    font-size: 1.80em;
     font-family: 'Nunito Sans Light', sans-serif;
+    margin-top: 75%; 
 }
 
 .btn:hover {
     background-color: #C42333;
     border-color: #C42333;
-}
-
-.btn:hover {
     text-decoration: underline;
-}
-
-section.btn a {
-    margin-top: 70%;
-}
-
-@media(max-width: 1500px) {
-    section#jogos>div {
-        height: 500px;
-        margin-top: 80px;
-    }
-
-    section#jogos>div {
-        font-size: 2.5rem;
-    }
-
-    div#forca {
-        background-size: 65%;
-    }
-
-    div#velha {
-        background-size: 65%;
-    }
-
-    section#jogos a {
-        margin-top: 65%;
-    }
 }

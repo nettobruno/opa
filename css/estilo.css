@@ -26,7 +26,7 @@ header#topo {
   text-align: center;
 }
 
-/*Menu horizontal com links e logo a direita*/
+/*Menu horizontal*/
 nav {
   width: 100%;
   position: fixed;
@@ -60,7 +60,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Logo da ETEC. Só é exibido após o scroll ser ativado */
+/* Logo da ETEC. Só é exibido quando o scroll é ativado */
 img#img-menu {
   width: 7%;
   margin-top: -50px;
@@ -98,52 +98,7 @@ img.animate-flicker {
   }
 }
 
-@-o-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .animate-flicker {
-  -webkit-animation: flickerAnimation 1.5s infinite;
-  -moz-animation: flickerAnimation 1.5s infinite;
-  -o-animation: flickerAnimation 1.5s infinite;
   animation: flickerAnimation 1.5s infinite;
 }
 
@@ -160,7 +115,7 @@ header#topo h1 {
 @media(max-width: 1500px) {
   header#topo h1 {
     font-size: 10em;
-  }
+  } 
 }
 
 
@@ -191,12 +146,12 @@ header#topo h1 {
   padding: 2em 0;
 }
 
+/*Linha vertical*/
 .cd-timeline__container::before {
-  /*Linha vertical*/
   content: '';
   position: absolute;
   top: 0;
-  left: 18px;
+  /* left: 18px; */
   height: 100%;
   width: 4px;
   background-color: #FF2E42;
@@ -263,22 +218,6 @@ header#topo h1 {
     visibility: visible;
     -webkit-animation: cd-bounce-1 0.6s;
     animation: cd-bounce-1 0.6s;
-  }
-}
-
-@-webkit-keyframes cd-bounce-1 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-
-  60% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
   }
 }
 
@@ -431,22 +370,6 @@ header#topo h1 {
   }
 }
 
-@keyframes cd-bounce-2 {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  60% {
-    opacity: 1;
-    transform: translateX(20px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @keyframes cd-bounce-2-inverse {
   0% {
     opacity: 0;
@@ -462,23 +385,6 @@ header#topo h1 {
     transform: translateX(0);
   }
 }
-
-@keyframes cd-bounce-2-inverse {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-
-  60% {
-    opacity: 1;
-    transform: translateX(-20px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 
 
 /*Bloco de texto logo abaixo da linha do tempo*/
@@ -491,7 +397,7 @@ section#conteudo p {
   font-size: 1.8rem;
   font-family: 'Nunito Sans Light', sans-serif;
   text-align: justify;
-  padding: 10%;
+  padding: 10% 8%;
 }
 
 /*Segundo trecho de texto após a linha do tempo*/
@@ -500,12 +406,15 @@ section#segundo-conteudo p {
   font-size: 1.8rem;
   font-family: 'Nunito Sans Light', sans-serif;
   text-align: justify;
-  padding: 10%;
+  padding: 10% 8%;
 }
 
-/* Esse h6 é uma gambiarra feita por mim, porque não consegui centralizar o link, então coloquei ele dentro de um titulo e centralizei esse titulo */
-h6 {
-  text-align: center;
+/* Botão com link para os jogos */
+div#block-btn{
+  display: flex;
+  justify-content: center;
+}
+a#btn-jogar {
   margin-top: -8%;
   margin-bottom: 8%;
   font-size: 1.80em;

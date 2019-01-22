@@ -1,4 +1,4 @@
-// Menu fixo ao topo
+// Realiza alterações no layout do menu quando o scroll é ativado
 $(document).ready(function () {
 	$('#img-menu').hide();
 });
