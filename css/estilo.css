@@ -81,8 +81,8 @@ input#menu-hamburguer {
     width: 60px;
     height: 60px;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    top: 2%;
+    left: 2%;
   }
 
   /* Isso cria uma das linhas do menu hamburguer */
