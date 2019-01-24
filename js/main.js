@@ -1,22 +1,25 @@
 // Realiza alterações no layout do menu quando o scroll é ativado
-$(document).ready(function () {
-	$('#img-menu').hide();
-});
+var windowWidth = window.innerWidth;
 
-$(window).on('scroll', _.debounce(function () {
-	var $nav = $('nav'),
-		navHeight = $nav.outerHeight(),
-		windowTop = $(this).scrollTop();
-
-	if (windowTop > navHeight) {
-		$nav.addClass('alterar-menu');
-		$('#img-menu').show();
-	} else {
-		$nav.removeClass('alterar-menu');
+if (windowWidth > 500) {
+	$(document).ready(function () {
 		$('#img-menu').hide();
-	}
-}, 10));
+	});
 
+	$(window).on('scroll', _.debounce(function () {
+		var $nav = $('nav'),
+			navHeight = $nav.outerHeight(),
+			windowTop = $(this).scrollTop();
+
+		if (windowTop > navHeight) {
+			$nav.addClass('alterar-menu');
+			$('#img-menu').show();
+		} else {
+			$nav.removeClass('alterar-menu');
+			$('#img-menu').hide();
+		}
+	}, 10));
+}
 
 // Vertical timeline
 (function () {
