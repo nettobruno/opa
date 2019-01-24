@@ -24,7 +24,7 @@ header#topo {
   background: linear-gradient(50deg, rgba(56, 70, 197, .7) 0%, rgba(255, 46, 66, .8) 100%), url("../img/otavio-fundo-preto.png");
   background-size: cover;
   min-height: 100vh;
-  min-width: 100vh;
+  min-width: 100vw;
   text-align: center;
 }
 
@@ -194,6 +194,21 @@ nav.alterar-menu ul li a {
   color: #FF2E42;
 }
 
+/* Título de Bem-Vindos ao topo da página */
+header#topo h1 {
+  display: inline-block;
+  margin-top: 15%;
+  color: white;
+  font-size: 14em;
+  font-family: 'Sacramento', cursive;
+}
+
+@media(max-width: 1500px) {
+  header#topo h1 {
+    font-size: 10em;
+  }
+}
+
 /* Seta piscando ao topo da página */
 img.animate-flicker {
   width: 9%;
@@ -216,22 +231,6 @@ img.animate-flicker {
 
 .animate-flicker {
   animation: flickerAnimation 1.5s infinite;
-}
-
-
-/* Título de Bem-Vindos ao topo da página */
-header#topo h1 {
-  display: inline-block;
-  margin-top: 15%;
-  color: white;
-  font-size: 14em;
-  font-family: 'Sacramento', cursive;
-}
-
-@media(max-width: 1500px) {
-  header#topo h1 {
-    font-size: 10em;
-  }
 }
 
 /*Estilização da linha do tempo*/
