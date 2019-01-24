@@ -217,7 +217,7 @@ header#topo h1 {
 @media(max-width: 500px) {
   header#topo h1 {
     font-size: 8em;
-    margin-top: 30%;
+    margin-top: 40%;
     line-height: 150px;
   }
 }
