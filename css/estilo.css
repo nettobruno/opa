@@ -159,7 +159,7 @@ input#menu-hamburguer {
 
   /* só aparecer o menu ao clicar */
   input:checked~nav ul {
-    opacity: 1;
+    display: block;
   }
 
   /* animação e estilo do menu */
@@ -170,7 +170,7 @@ input#menu-hamburguer {
     transform: translate(-50%, -50%);
     list-style: none;
     font-size: 2.5em;
-    opacity: 0;
+    display: none;
     transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
     /* O primeiro valor é a duração da transição, depois é o delay, e o cubic-bezier é do Dev tools e ajuda a controlar a animação */
   }
@@ -270,6 +270,15 @@ img.animate-flicker {
   color: #FF2E42;
   text-align: center;
   font-family: 'Nunito Sans Light', sans-serif;
+}
+
+@media(max-width: 500px){
+  .cd-timeline h2{
+    font-size: 4em;
+    padding-left: 2px;
+    padding-right: 2px;
+    line-height: 70px;
+  }
 }
 
 .cd-timeline__container {
