@@ -97,8 +97,8 @@ input#menu-hamburguer {
     background: #FFF;
     width: 30px;
     height: 2px;
-    top: 25px;
-    left: 10px;
+    top: 50%;
+    left: 20%;
     transition: .5s ease-in-out;
   }
 
