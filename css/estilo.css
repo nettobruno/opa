@@ -28,8 +28,8 @@ header#topo {
   text-align: center;
 }
 
-@media (max-width: 500px){
-  header#topo{
+@media (max-width: 500px) {
+  header#topo {
     background: linear-gradient(50deg, rgb(56, 70, 197) 0%, rgb(255, 46, 66) 100%);
   }
 }
@@ -247,8 +247,8 @@ img.animate-flicker {
   animation: flickerAnimation 1.5s infinite;
 }
 
-@media (max-width: 500px){
-  img.animate-flicker{
+@media (max-width: 500px) {
+  img.animate-flicker {
     width: 25%;
   }
 }
@@ -368,6 +368,12 @@ img.animate-flicker {
 
   100% {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 500px) {
+  .cd-timeline__img {
+    left: -5%;
   }
 }
 
