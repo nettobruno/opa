@@ -3,6 +3,11 @@
 	src: url("../../fonts/NunitoSans-Light.ttf");
 }
 
+@font-face {
+    font-family: 'Sacramento';
+    src: url("../../fonts/Sacramento-Regular.ttf");
+}  
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,6 +16,7 @@
 div#content {
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('sapo.gif'); 
     background-size: cover;
+    background-position: center bottom;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -19,27 +25,30 @@ div#content {
 }
 
 
-div#teste {
+div#bloco {
     font-family: 'Nunito Sans Light';
     text-align: justify;
     color: white;
     width: 80%;
 }
 
-div#teste h1 {
-    font-size: 4rem;
+div#bloco h1 {
+    font-size: 5.5rem;
+    /* font-family: 'Sacramento'; */
 }
 
-div#teste p{
+div#bloco p{
     font-size: 1.8rem;
 }
-div#teste b{
-    color: #C42333;
+div#bloco b{
+    /* color: #808bee; */
     text-decoration: underline;
+    text-shadow: -2px 0 rgb(66, 66, 66), 0 2px rgb(66, 66, 66), 2px 0 rgb(66, 66, 66), 0 -2px rgb(66, 66, 66);
 }
 
 div#btn{
     margin-top: 2em;
+    text-align: center;
 }
 
 div#btn a {
