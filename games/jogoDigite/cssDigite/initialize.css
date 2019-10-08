@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Nunito Sans Light';
-	src: url("../../fonts/NunitoSans-Light.ttf");
+	src: url("../../../fonts/NunitoSans-Light.ttf");
 }
 
 @font-face {
     font-family: 'Sacramento';
-    src: url("../../fonts/Sacramento-Regular.ttf");
+    src: url("../../../fonts/Sacramento-Regular.ttf");
 }  
 
 * {
@@ -14,7 +14,7 @@
 }
 
 div#content {
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('imgDigite/sapo.gif'); 
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('../imgDigite/sapo.gif'); 
     background-size: cover;
     background-position: center bottom;
     height: 100vh;
