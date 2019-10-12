@@ -30,6 +30,7 @@ nav {
     display: flex;
     align-items: center;
     padding-left: 7%;
+    padding-right: 7%;
 }
 
 nav ul {
