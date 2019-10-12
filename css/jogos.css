@@ -81,12 +81,12 @@ section#jogos {
 
 section#jogos div.bloco-jogo {
     margin-top: 5%;
+    padding: 15px;
     display: inline-block;
     background-color: white;
     color: #FF2E42;
     border-radius: 10px;
     width: 35%;
-    height: 550px;
     font-family: 'Sacramento', cursive;
 }
 
@@ -95,23 +95,24 @@ div.bloco-jogo h2{
 }
 
 /*retângulo do jogo da forca*/
-div#forca {
+div#forca{
     margin-right: 20px;
-    background: url('../img/jogo-forca.png') no-repeat 50% 80px;
-    background-size: 75%;
+}
+
+div#forca img{
+    width: 80%;
 }
 
 /*retângulo do jogo da velha*/
-div#velha {
+div#velha{
     margin-left: 20px;
-    background: url('../img/jogo-velha.png') no-repeat 50% 80px;
-    background-size: 75%;
+}
+div#velha img{
+    width: 80%;
 }
 
-div#digito {
-    margin-left: 20px;
-    background: url('../img/teclado.png') no-repeat 50% 40px;
-    background-size: 85%;
+div#digite img{
+    width: 85%;
 }
 
 /*Botão dos jogos*/
@@ -125,7 +126,6 @@ div#digito {
     color: white;
     font-size: 1.80em;
     font-family: 'Nunito Sans Light', sans-serif;
-    margin-top: 75%; 
 }
 
 .btn:hover {
