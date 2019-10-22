@@ -19,8 +19,7 @@
 }
 
 .contentInfo {
-/* 	text-shadow: -2px 0 #5F5F5F, 0 2px #5F5F5F, 2px 0 #5F5F5F, 0 -2px #5F5F5F;
- */	font-weight: bold;
+  font-weight: bold;
 	color: #FFF;
 	width: 60%;
 	display: flex;
