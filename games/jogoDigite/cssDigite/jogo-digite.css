@@ -107,6 +107,22 @@
 	border-radius: 5px;
 }
 
+div a#jogos-btn {
+	display: inline-block;
+	margin-top: 30%;
+	text-decoration: none;
+	border: 1px solid #1ED107;
+	padding: 20px 40px;
+	border-radius: 5px;
+	background-color: #1ED107;
+	color: white;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+div a#jogos-btn:hover {
+	text-decoration: underline;
+}
+
 @media (max-width: 500px) {
 	.input {
 		width: 90%;
@@ -115,20 +131,8 @@
 	.blockMensagem {
 		padding: 10%
 	}
-
-	img#img-menu {
-		display: none;
-	}
-
-	nav ul li a {
-		display: inline-block;
-		color: #fff;
-		font-size: 1.00em;
-		text-decoration: none;
-		font-family: 'Nunito Sans', sans-serif;
-		padding: 10px;
-	}
-	.contentInfo{
+	
+	.contentInfo {
 		align-items: center;
 		flex-direction: column;
 	}
