@@ -34,14 +34,12 @@ div#bloco {
 
 div#bloco h1 {
     font-size: 5.5rem;
-    /* font-family: 'Sacramento'; */
 }
 
 div#bloco p{
     font-size: 1.8rem;
 }
 div#bloco b{
-    /* color: #808bee; */
     text-decoration: underline;
     text-shadow: -2px 0 rgb(66, 66, 66), 0 2px rgb(66, 66, 66), 2px 0 rgb(66, 66, 66), 0 -2px rgb(66, 66, 66);
 }
@@ -52,13 +50,15 @@ div#btn{
 }
 
 div#btn a {
+    display: inline-block;
     text-decoration: none;
     border: 1px solid #FF2E42;
-    padding: 10px 40px;
+    padding: 20px 40px;
     border-radius: 5px;
     background-color: #FF2E42;
     color: white;
-    font-size: 1.8em;
+    font-size: 1.80em;
+    font-family: 'Nunito Sans Light', sans-serif;
   }
   
   div#btn a:hover {
