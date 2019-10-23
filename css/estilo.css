@@ -82,7 +82,8 @@ nav.alterar-menu  li a {
 /* Seta piscando ao topo da página */
 img.animate-flicker {
   width: 9%;
-  margin-top: 7%;
+  margin-top: 5%;
+  /* margin-top: 7%; */
 }
 
 @keyframes flickerAnimation {
