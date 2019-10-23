@@ -83,12 +83,12 @@ a#jogos-btn {
 	display: inline-block;
 	margin-top: 1%;
 	text-decoration: none;
-	border: 1px solid #1ED107;
+	border: 1px solid #00c853;
 	padding: 20px 40px;
 	border-radius: 5px;
-	background-color: #1ED107;
+	background-color: #00c853;
 	color: white;
-	font-size: .8em;
+	font-size: 1.2em;
 	font-family: 'Nunito Sans', sans-serif;
 }
 
