@@ -61,7 +61,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 3px;
+  transition: .2s;
 }
 
 /* Logo da ETEC. Só é exibido quando o scroll é ativado */
@@ -77,6 +79,11 @@ nav.alterar-menu {
 
 nav.alterar-menu  li a {
   color: #FF2E42;
+}
+
+nav.alterar-menu  li a:hover{
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /* Seta piscando ao topo da página */

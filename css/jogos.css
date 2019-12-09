@@ -54,23 +54,30 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 3px;
+    transition: .2s;
 }
 
 /* Logo da ETEC. Só é exibido quando o scroll é ativado */
 nav img#img-menu {
     width: 10%;
-  }
-  
-  /* Esse menu fica escondido. Ele só é exibido quando o JS percebe que o scroll entrou em ação. Arquivo main.js na pasta js */
-  nav.alterar-menu {
+}
+
+/* Esse menu fica escondido. Ele só é exibido quando o JS percebe que o scroll entrou em ação. Arquivo main.js na pasta js */
+nav.alterar-menu {
     background-color: white;
     box-shadow: 0px 1px 10px #808080;
-  }
-  
-  nav.alterar-menu  li a {
+}
+
+nav.alterar-menu li a {
     color: #FF2E42;
-  }
+}
+
+nav.alterar-menu li a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
 
 /*Seção com botão de link para os jogos*/
 section#jogos {
@@ -90,28 +97,29 @@ section#jogos div.bloco-jogo {
     font-family: 'Sacramento', cursive;
 }
 
-div.bloco-jogo h2{
+div.bloco-jogo h2 {
     font-size: 4em;
 }
 
 /*retângulo do jogo da forca*/
-div#forca{
+div#forca {
     margin-right: 20px;
 }
 
-div#forca img{
+div#forca img {
     width: 80%;
 }
 
 /*retângulo do jogo da velha*/
-div#velha{
+div#velha {
     margin-left: 20px;
 }
-div#velha img{
+
+div#velha img {
     width: 80%;
 }
 
-div#digite img{
+div#digite img {
     width: 85%;
 }
 
