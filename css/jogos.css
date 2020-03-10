@@ -20,7 +20,7 @@ body {
     background: linear-gradient(50deg, rgba(56, 70, 197) 0%, rgba(255, 46, 66) 100%);
 }
 
-/*Menu horizontal*/
+/*Menu horizontal com links e logo a direita*/
 nav {
     width: 100%;
     height: 10vh;
