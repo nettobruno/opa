@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Nunito Sans Light';
-	src: url("../fonts/NunitoSans-Light.ttf");
+	src: url("../../../fonts/NunitoSans-Light.ttf");
 }
 
 * {
@@ -16,6 +16,11 @@ body {
 
 
 /*Configuração da tela para Digitar nome e dar play*/
+div#pagina_inicial{
+	display: flex;
+	justify-content: center;
+}
+
 div#pagina_inicial table {
 	width: 70%;
 	margin-top: 13%;
@@ -54,31 +59,13 @@ a#jogos-btn {
 	display: inline-block;
 	margin-top: 1%;
 	text-decoration: none;
-	border: 1px solid #1ED107;
+	border: 1px solid #00c853;
 	padding: 20px 40px;
 	border-radius: 5px;
-	background-color: #1ED107;
+	background-color: #00c853;
 	color: white;
-	font-size: .8em;
+	font-size: 1em;
 	font-family: 'Nunito Sans', sans-serif;
-}
-
-a#principal-btn {
-	display: inline-block;
-	margin-top: 1%;
-	text-decoration: none;
-	border: 1px solid #FF2E42;
-	padding: 20px 40px;
-	border-radius: 5px;
-	background-color: #FF2E42;
-	color: white;
-	font-size: .8em;
-	font-family: 'Nunito Sans', sans-serif;
-}
-
-a#principal-btn:hover {
-	background-color: #C42333;
-	border-color: #C42333;
 }
 
 a#jogos-btn:hover {

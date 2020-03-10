@@ -23,22 +23,25 @@ body {
 /*Menu horizontal*/
 nav {
     width: 100%;
+    height: 10vh;
     position: fixed;
     z-index: 1;
     transition: .5s;
+    display: flex;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 nav ul {
     list-style: none;
-    text-align: left;
-}
-
-nav ul li:first-child {
-    margin-left: 7%;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
@@ -54,134 +57,18 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilização para menu hamburguer */
-input#menu-hamburguer {
-    display: none;
+/* Logo da ETEC. Só é exibido quando o scroll é ativado */
+nav img#img-menu {
+    width: 10%;
 }
-
-@media (max-width: 500px) {
-
-    img#img-menu,
-    div#bloco-seta {
-        display: none;
-    }
-
-    /* Isso cria o círculo branco que envolve o menu hamburguer */
-    .menu {
-        background: #000;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-    }
-
-    /* Isso cria uma das linhas do menu hamburguer */
-    .hamburguer {
-        position: relative;
-        display: block;
-        background: #FFF;
-        width: 30px;
-        height: 2px;
-        top: 29px;
-        left: 15px;
-        transition: .5s ease-in-out;
-    }
-
-    /* Isso criar as outras duas linhas do menu hamburguer. Eles tem tamanho de 100%, isso fará com que peguem 100% do elemento principal, ou seja, terão o mesmo tamanho */
-    .hamburguer:before,
-    .hamburguer:after {
-        background: #FFF;
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        transition: .5s ease-in-out;
-    }
-
-    /* As linas ficariam juntas, com essas estilizações as linhas se afastam e ficam com a forma de um menu hamburguer */
-    .hamburguer:before {
-        top: -10px;
-    }
-
-    .hamburguer:after {
-        bottom: -10px;
-    }
-
-    input {
-        display: none;
-    }
-
-    input:checked~label .hamburguer {
-        transform: rotate(45deg);
-    }
-
-    input:checked~label .hamburguer:before {
-        transform: rotate(90deg);
-        top: 0;
-    }
-
-    input:checked~label .hamburguer:after {
-        transform: rotate(90deg);
-        bottom: 0;
-    }
-
-    .menu {
-        cursor: pointer;
-        box-shadow: 0 0 0 0 #000, 0 0 0 0 #000;
-        transition: box-shadow 1.1s cubic-bezier(.19, 1, .22, 1);
-    }
-
-    .menu:hover {
-        box-shadow: 0 0 0 8px #000, 0 0 0 8px #000;
-    }
-
-    /* animação do menu */
-    input:checked~label .menu {
-        box-shadow: 0 0 0 130vw #000, 0 0 0 130vh #000;
-    }
-
-    /* só aparecer o menu ao clicar */
-    input:checked~nav ul {
-        opacity: 1;
-    }
-
-    /* animação e estilo do menu */
-    nav ul {
-        position: absolute;
-        margin-top: 50%;
-        margin-left: 55%;
-        transform: translate(-50%, -50%);
-        list-style: none;
-        font-size: 2.5em;
-        opacity: 0;
-        transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
-        /* O primeiro valor é a duração da transição, depois é o delay, e o cubic-bezier é do Dev tools e ajuda a controlar a animação */
-        z-index: 2;
-    }
-
-    nav ul li a {
-        display: block;
-        text-decoration: none;
-    }
-}
-
-img#img-menu {
-    width: 7%;
-    margin-top: -50px;
-    float: right;
-    margin-right: 7%;
-}
-
-/* Essa classe será ativada pelo JS do arquivo main.js */
+  
+/* Esse menu fica escondido. Ele só é exibido quando o JS percebe que o scroll entrou em ação. Arquivo main.js na pasta js */
 nav.alterar-menu {
     background-color: white;
     box-shadow: 0px 1px 10px #808080;
 }
-
-nav.alterar-menu ul li a {
+  
+nav.alterar-menu  li a {
     color: #FF2E42;
 }
 
@@ -190,29 +77,25 @@ section {
     padding-top: 7%;
 }
 
-/* Formatação da primeira div */
-section {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 div.equipe {
     background-color: white;
     border-radius: 20px;
-    width: 100%;
-    height: 60vh;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 7%;
+    padding: 20px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 figure img.dev {
     border-radius: 100%;
     width: 35%;
-    margin: 2%;
-    float: right;
 }
 
 figcaption {
@@ -224,7 +107,6 @@ figcaption {
 figcaption h3 {
     font-size: 2.5em;
     font-family: 'Nunito Sans Light', sans-serif;
-    padding-top: 10px;
     color: #FF2E42;
 }
 
@@ -232,7 +114,6 @@ figcaption p {
     font-size: 1.8em;
     font-family: 'Nunito Sans Light', sans-serif;
     margin-top: 0px;
-    padding-bottom: 20px;
     color: #606060;
 }
 
@@ -241,6 +122,6 @@ figcaption p {
 }
 
 .social-media a img {
-    margin-top: 55%;
+    margin-top: 10%;
     padding-right: 10px;
 }
